@@ -1,0 +1,368 @@
+/*FONTES*/
+@font-face{
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway-Light';
+    src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
+body{
+    background-color: #f8f8f8;
+    font-family: 'Raleway-Regular';
+}
+
+p, a{
+    transition: all .75s;
+    -o-transition: all .75s;
+    -moz-transition: all .75s;
+    -webkit-transition: all .75s;
+    -ms-transition: all .75s;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover{
+    outline: none;
+    text-decoration: none;
+}
+
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+a:visited{
+    outline: none;
+    text-decoration: none;
+}
+
+#main{
+    width: 100%;
+    height: auto;
+}
+
+#main .container{
+    margin-left: 250px;
+}
+
+/*width imagem 68px*/
+#main img.logo{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#main .itens{
+    width: 550px;
+    height: 550px;
+    margin: 100px auto;
+    display: block;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
+    display: none !important;
+}
+
+#main .itens .time{
+    width: 50%;
+    height: 90px;
+    background-color: #e7202e;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#main .itens .time p{
+    margin-top: 35px;
+}
+
+#main .itens img.pics{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 550px;
+    height: 550px;
+}
+
+#main .itens form button{
+    width: 50%;
+    height: 90px;
+    display: block;
+    background-color: #fff;
+    color: #e7202e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    z-index: 10;
+    border-bottom-right-radius: 10px;
+}
+
+#main .itens .item p.tdesc{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 100;
+    font-weight: bold;
+}
+
+#main .itens .item p.tdesc.ttl{
+    left: 15px;
+    bottom: 105px;
+    font-size: 1.6em;
+}
+
+#main .itens .item p.tdesc.tam{
+    bottom: 85px;
+    left: 15px;
+    font-size: .9em;
+}
+
+#main .itens .item p.tdesc.price{
+    bottom: 85px;
+    right: 15px;
+    font-size: 3em;
+}
+
+#main .itens .item p.tdesc.price>span{
+    font-size: .5em;
+    position: absolute;
+    left: -35px;
+    top: 20px;
+}
+
+
+button.control-btn{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 260px;
+    z-index: 100;
+}
+
+button.control-btn img{
+    margin-top: -2px;
+}
+
+button.control-btn.left{
+    left: 15px;
+}
+
+button.control-btn.right{
+    right: 15px;
+}
+
+.left-side::-webkit-scrollbar {
+    width: 0;
+}
+
+.left-side{
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: #555555;
+    text-align: center;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    transition: all .75s;
+    -o-transition: all .75s;
+    -moz-transition: all .75s;
+    -webkit-transition: all .75s;
+    -ms-transition: all .75s;
+    z-index: 99999;
+    outline: none;
+    border: none;
+}
+
+
+
+.left-side .lcontainer{
+    width: 70%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.left-side img.perfil{
+    width: 80px;
+    height: 80px;
+    display: block;
+    outline: none;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 120px auto 20px auto;
+}
+
+.left-side p.t1{
+    margin-bottom: 60px;
+}
+
+.left-side a{
+    color: #555555;
+}
+
+.left-side a>p>span{
+    color: #ff5858;
+}
+
+.left-side a>p:hover{
+    color: #000;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+}
+
+.left-side p.t2{
+    margin-top: 60px;
+}
+
+.left-side span.xx{
+    color: #ff5858;
+    opacity: 0;
+    transition: all .75s;
+    -o-transition: all .75s;
+    -moz-transition: all .75s;
+    -webkit-transition: all .75s;
+    -ms-transition: all .75s;
+}
+
+.left-side span.xx.active{
+    color: #ff5858;
+    opacity: 1;
+}
+
+.left-side .checkbox input{
+    opacity: 0;
+    display: none;
+}
+
+.left-side .checkbox label{
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+.left-side .checkbox label.papito{
+    margin-left: 20px;
+}
+
+.left-side .checkbox label.papito2{
+    margin: 0px;
+}
+
+.left-side span.bbl, .left-side span.bbr{
+    color: #ff5858;
+    opacity: 0;
+    transition: all .75s;
+    -o-transition: all .75s;
+    -moz-transition: all .75s;
+    -webkit-transition: all .75s;
+    -ms-transition: all .75s;
+}
+
+.left-side span.bbl.active, .left-side span.bbr.active{
+    opacity: 1;
+}
+
+.left-side p.t3{
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+.left-side .msg-box {
+    margin-top: 30px;
+}
+
+.left-side .msg-box img{
+    height: 60px;
+    width: 60px;
+    outline: none;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    float: left;
+}
+
+.left-side .msg-box p.store{
+    color: #2f373d;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.left-side .msg-box p.storeds{
+    color: #2f373d;
+    font-size: .8em;
+    text-align: left;
+    margin-top: -10px;
+}
+
+p.msg-count{
+    color: #2f373d;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+p.msg-count>span{
+    color: #ee3535;
+}
+
+#settings{
+    background-color: #ff5858;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#settings img{
+    margin-top: 8px;
+
+
+}
+
+ @keyframes gira {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.horario{
+   animation: gira 8s linear infinite;
+}
